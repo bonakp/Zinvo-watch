@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Kanit&family=Quicksand:wght@300..700&family=Rajdhani:wght@300&family=Teko&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141414;
+    box-shadow: 0 8px 10px rgb(239, 235, 238);
+    padding: 35px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: "Bebas Neue";
+  }
+  .navbar a:hover {
+    color: #990000;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .logo {
+    margin-right: 50px;
+  }
+  .logo img {
+    height: 35px;
+  }
+  .list {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+  }
+  #toggler,
+  .navbar label {
+    display: none;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .pic img{
+    height: 500px;
+  }
+  .input{
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    background:linear-gradient(45deg, greenyellow,#022d08);
+    border-radius: 20px;
+  }
+  .con{
+    text-align: center;
+    justify-content: center;
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: px;
+  }
+  .con h2{
+    color: #fff;
+    font-size: 40px;
+    transition-duration: 0.5s;
+  }
+  .con h2:hover{
+    color: #000;
+    filter: drop-shadow(0px 5px 10px #fff);
+  }
+  .con input{
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    padding: 3px;
+  }
+  .con input:hover{
+    background-color: transparent;
+    border:1px solid black;
+    color: #fff;
+  }
+  .message input{
+    height: 70px;
+  }
+  .sent{
+    background-color: rgb(0, 255, 0);
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 20px;
+    transition-duration: 0.6s;
+   }
+   .sent a{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Quicksand';
+   }
+   .sent:hover{
+    background-color: #273ff3;
+    filter: drop-shadow(0px 5px 10px #fff);
+   }
+   @media screen and (max-width: 900px){
+    .pic img{
+        height: 300px;
+    }
+   }
+  @media screen and (max-width: 600px) {
+    .navbar{
+      background-color: #fff;
+    }
+    .navbar a{
+      color: #000;
+    }
+    .logo img{
+      filter: drop-shadow(0px 5px 15px black);
+    }
+    .menu {
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .list {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .navbar label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    #toggler:checked ~ .menu {
+      max-height: 100%;
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pic img{
+        height: 200px;
+    }
+    .input{
+        width: 300px;
+    }
+    .con input{
+        width: 230px;
+    }
+    .pic{
+      height: 200px;
+    }
+    }
+    @media screen and (max-width: 300px){ 
+      .form{
+        width: 200px;
+        padding-left: 90px;
+        }
+        .con input{
+            width: 180px;
+            font-size: 12px;
+        }
+        .con h2{
+            font-size: 20px;
+        }
+        .sent{
+            width: 100px;
+        }
+        .sent a{
+            font-size: 12px;
+        }
+    }

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Kanit&family=Quicksand:wght@300..700&family=Rajdhani:wght@300&family=Teko&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141414;
+  box-shadow: 0 8px 10px rgb(239, 235, 238);
+  padding: 35px;
+  position: sticky;
+  top: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "Bebas Neue";
+}
+.navbar a:hover {
+  color: #990000;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.logo {
+  margin-right: 50px;
+}
+.logo img {
+  height: 35px;
+}
+.list {
+  list-style: none;
+  gap: 25px;
+  display: flex;
+}
+#toggler,
+.navbar label {
+  display: none;
+}
+.content {
+  justify-content: center;
+  align-items: center;
+}
+.content .profile {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.content .profile h3 {
+  font-size: 25px;
+  font-family: "Roboto";
+}
+.content .profile img {
+  height: 300px;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-top: 30px;
+}
+.team .item {
+  text-align: center;
+}
+.team .item img {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid black;
+}
+.team .item img:hover {
+  background-color: #141414;
+}
+.team .item p {
+  font-size: 14px;
+  font-family: "Roboto";
+  transition-duration: 0.6s;
+}
+.team .item p:hover {
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 0px 5px 5px red;
+}
+.info {
+  padding: 40px;
+  width: 100%;
+  text-align: center;
+}
+.info h2 {
+  font-family: "Roboto";
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar a {
+    color: #000000;
+  }
+  .content .profile img {
+    height: 200px;
+  }
+  .team {
+    gap: 5px;
+  }
+  .logo img {
+    filter: drop-shadow(0px 5px 10px black);
+  }
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .content .profile img {
+    height: 100px;
+  }
+  .team .item img {
+    height: 40px;
+  }
+  .team .item p {
+    font-size: 10px;
+  }
+}
